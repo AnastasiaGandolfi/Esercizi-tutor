@@ -5,6 +5,10 @@ class Persona {
         this.cognome = cognome;
         this.eta = eta;
     }
+
+    toJSON(){
+        return {age: this.eta}
+    }
 }
 
 function makeid(length) {
@@ -31,10 +35,19 @@ for (let i = 0; i < 10; i++) {
     let eta = getRandomInt(10, 30);
     let persona = new Persona(name, cognome, eta);
     arrayPers = [...arrayPers, persona];
+    // let json = JSON.stringify(persona);
+    // console.log(json);
 }
 
-console.log(arrayPers);
+// console.log(arrayPers);
 
-let maggiorenni = arrayPers.filter(item => item.eta >= 18)
-console.log(maggiorenni);
+// let eta = arrayPers.map(item => JSON.stringify(item));
+// console.log(eta);
 
+// let filtereta = eta.filter(item => JSON.parse(item).age >= 18);
+// console.log(filtereta);
+
+console.log(arrayPers[0]);
+
+const {nome: name, eta: age} = arrayPers[0];
+console.log(name, age);
