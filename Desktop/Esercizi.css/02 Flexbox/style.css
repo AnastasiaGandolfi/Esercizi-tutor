@@ -1,0 +1,38 @@
+.container {
+    border: 3px solid black;
+    width: 200px;
+    height: 90vh;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.link {
+    width: 30%;
+    height: 200px;
+    font-size: 20px;
+    transition: width 3s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    list-style: none;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+a:hover {
+    color: #2b2bb2;
+
+}
+
+.avatar{
+    margin: 0;
+   
+}
