@@ -1,3 +1,4 @@
+
 async function retriveDog(){
     let res = await fetch("https://dog.ceo/api/breeds/image/random")
     let json = await res.json()
@@ -13,3 +14,4 @@ async function retriveDog(){
 showData() */
 
 retriveDog()
+
