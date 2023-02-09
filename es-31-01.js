@@ -35,6 +35,8 @@ for (let i = 0; i < 10; i++) {
 
 console.log(arrayPers);
 
+
 let maggiorenni = arrayPers.filter(item => item.eta >= 18)
 console.log(maggiorenni);
+
 
