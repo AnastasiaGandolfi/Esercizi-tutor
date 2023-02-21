@@ -41,6 +41,7 @@ for (let i = 0; i < 10; i++) {
 
 // console.log(arrayPers);
 
+<<<<<<< HEAD:Esercizio-31.01.js
 // let eta = arrayPers.map(item => JSON.stringify(item));
 // console.log(eta);
 
@@ -51,3 +52,10 @@ console.log(arrayPers[0]);
 
 const {nome: name, eta: age} = arrayPers[0];
 console.log(name, age);
+=======
+
+let maggiorenni = arrayPers.filter(item => item.eta >= 18)
+console.log(maggiorenni);
+
+
+>>>>>>> e943121d8e8dde9f715a21339ab651106dfb7eaf:es-31-01.js
